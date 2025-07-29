@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\UserResource;
 use App\Models\User;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -45,7 +46,11 @@ final class AuthController
     }
 
     //Get authenticated user
-    public function show() {}
+    public function show(Request $request): UserResource
+    {
+        /** @var User $user */
+        return UserResource::make($request->user());
+    }
 
     //Logout
     public function destroy(Request $request): Response
