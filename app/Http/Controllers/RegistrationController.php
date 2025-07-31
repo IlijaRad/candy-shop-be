@@ -12,7 +12,7 @@ final class RegistrationController
     public function store(Request $request)
     {
         $data = $request->validate([
-            "email" => ["required", "email"],
+            "email" => ["required", "email", "unique:users,email"],
             'password' => ['required', 'confirmed', Password::min(6)],
         ]);
 
