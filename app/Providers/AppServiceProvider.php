@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Models\User;
 use Illuminate\Auth\Notifications\ResetPassword;
+use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Uri;
@@ -27,5 +28,7 @@ class AppServiceProvider extends ServiceProvider
             $frontendUrl = Uri::of(Config::string('app.frontend_url'));
             return $frontendUrl . '/reset-password?token=' . $token . '&email=' . urlencode($user->email);
         });
+
+        JsonResource::withoutWrapping();
     }
 }
