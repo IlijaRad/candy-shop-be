@@ -1,0 +1,352 @@
+[
+    {
+        "name": "Energy Drink Monster",
+        "slug": "energy-drink-monster",
+        "sku": "EDM-54321",
+        "price": 200,
+        "discounted_price": 180,
+        "stock": 200,
+        "description": "Monster Energy je energetski napitak koji vas pokreće.",
+        "product_information": {
+            "nutritional_values": {
+                "energy": "200 kcal",
+                "fat": "0 g",
+                "saturates": "0 g",
+                "carbohydrate": "50 g",
+                "sugars": "50 g",
+                "fibre": "0 g",
+                "protein": "0 g",
+                "salt": "0 g"
+            },
+            "ingredients": "Voda, šećer, kofein, taurin, vitamini",
+            "allergens": "Bez alergena.",
+            "country_of_origin": "SAD"
+        },
+        "image_path": "monster/1.webp"
+    },
+    {
+        "name": "Red Bull Energy Drink",
+        "slug": "red-bull-energy-drink",
+        "sku": "RB-67890",
+        "price": 250,
+        "discounted_price": 230,
+        "stock": 180,
+        "description": "Red Bull je najpoznatiji energetski napitak na svetu.",
+        "product_information": {
+            "nutritional_values": {
+                "energy": "220 kcal",
+                "fat": "0 g",
+                "saturates": "0 g",
+                "carbohydrate": "55 g",
+                "sugars": "55 g",
+                "fibre": "0 g",
+                "protein": "0 g",
+                "salt": "0.01 g"
+            },
+            "ingredients": "Voda, šećer, kofein, taurin, vitamini",
+            "allergens": "Bez alergena.",
+            "country_of_origin": "Austrija"
+        },
+        "image_path": "redbull/1.webp"
+    },
+    {
+        "name": "Žvakaće gume Extra",
+        "slug": "zvake-extra",
+        "sku": "ZO-54321",
+        "price": 150,
+        "discounted_price": 130,
+        "stock": 300,
+        "description": "Extra žvakaće gume sa mentol ukusom.",
+        "product_information": {
+            "nutritional_values": {
+                "energy": "150 kcal",
+                "fat": "0 g",
+                "saturates": "0 g",
+                "carbohydrate": "62 g",
+                "sugars": "0 g",
+                "fibre": "0 g",
+                "protein": "0 g",
+                "salt": "0 g"
+            },
+            "ingredients": "Guma, mentol, sladila",
+            "allergens": "Bez alergena.",
+            "country_of_origin": "Srbija"
+        },
+        "image_path": "extra/1.webp"
+    },
+    {
+        "name": "Relentless Energetsko Piće Malina Zero",
+        "slug": "relentless-energetsko-piće",
+        "sku": "TED-11111",
+        "price": 220,
+        "discounted_price": 200,
+        "stock": 250,
+        "description": "Relentless Energy je napitak za energiju i snagu.",
+        "product_information": {
+            "nutritional_values": {
+                "energy": "2 kcal",
+                "fat": "0 g",
+                "saturates": "0 g",
+                "carbohydrate": "0.7 g",
+                "sugars": "0 g",
+                "fibre": "0 g",
+                "protein": "0 g",
+                "salt": "0 g"
+            },
+            "ingredients": "Voda, zaslađivači, kofein, taurin, vitamini",
+            "allergens": "Bez alergena.",
+            "country_of_origin": "Srbija"
+        },
+        "image_path": "relentless/1.webp"
+    },
+    {
+        "name": "Toblerone Gold",
+        "slug": "toblerone-gold",
+        "sku": "TB-24680",
+        "price": 400,
+        "discounted_price": 370,
+        "stock": 80,
+        "description": "Jedinstvena čokolada sa mlekom i bademom.",
+        "product_information": {
+            "nutritional_values": {
+                "energy": "500 kcal",
+                "fat": "30 g",
+                "saturates": "15 g",
+                "carbohydrate": "60 g",
+                "sugars": "50 g",
+                "fibre": "5 g",
+                "protein": "7 g",
+                "salt": "0.1 g"
+            },
+            "ingredients": "Čokolada, mleko, baden",
+            "allergens": "Sadrži baden, gluten, mleko.",
+            "country_of_origin": "Švajcarska"
+        },
+        "image_path": "toblerone/1.webp"
+    },
+    {
+        "name": "KitKat Chunky",
+        "slug": "kitKat-chunky",
+        "sku": "KT-36912",
+        "price": 350,
+        "discounted_price": 300,
+        "stock": 90,
+        "description": "Hladna čokolada sa hrskavim vafelima.",
+        "product_information": {
+            "nutritional_values": {
+                "energy": "450 kcal",
+                "fat": "25 g",
+                "saturates": "10 g",
+                "carbohydrate": "55 g",
+                "sugars": "50 g",
+                "fibre": "3 g",
+                "protein": "6 g",
+                "salt": "0.2 g"
+            },
+            "ingredients": "Čokolada, vafel, šećer, mleko",
+            "allergens": "Sadrži mleko, gluten.",
+            "country_of_origin": "Srbija"
+        },
+        "image_path": "kitkat/1.webp"
+    },
+    {
+        "name": "Mars",
+        "slug": "mars",
+        "sku": "MS-75319",
+        "price": 450,
+        "discounted_price": 420,
+        "stock": 110,
+        "description": "Čokoladna poslastica sa karamela i kestenom.",
+        "product_information": {
+            "nutritional_values": {
+                "energy": "480 kcal",
+                "fat": "25 g",
+                "saturates": "10 g",
+                "carbohydrate": "60 g",
+                "sugars": "55 g",
+                "fibre": "2 g",
+                "protein": "7 g",
+                "salt": "0.1 g"
+            },
+            "ingredients": "Čokolada, karamela, kesten, mleko, šećer",
+            "allergens": "Sadrži mleko, gluten.",
+            "country_of_origin": "Srbija"
+        },
+        "image_path": "mars/1.webp"
+    },
+    {
+        "name": "Snickers",
+        "slug": "snickers",
+        "sku": "SN-48206",
+        "price": 400,
+        "discounted_price": 370,
+        "stock": 140,
+        "description": "Energizirajuća čokolada sa kikirikijem i karamela.",
+        "product_information": {
+            "nutritional_values": {
+                "energy": "500 kcal",
+                "fat": "28 g",
+                "saturates": "12 g",
+                "carbohydrate": "55 g",
+                "sugars": "45 g",
+                "fibre": "2 g",
+                "protein": "8 g",
+                "salt": "0.2 g"
+            },
+            "ingredients": "Čokolada, kikiriki, karamela, mleko, šećer",
+            "allergens": "Sadrži kikiriki, mleko, gluten.",
+            "country_of_origin": "Srbija"
+        },
+        "image_path": "snickers/1.webp"
+    },
+    {
+        "name": "Pepsi",
+        "slug": "pepsi",
+        "sku": "PM-24680",
+        "price": 220,
+        "discounted_price": 200,
+        "stock": 190,
+        "description": "Pepsi sa ukusom kole.",
+        "product_information": {
+            "nutritional_values": {
+                "energy": "1 kcal",
+                "fat": "0 g",
+                "saturates": "0 g",
+                "carbohydrate": "0 g",
+                "sugars": "0 g",
+                "fibre": "0 g",
+                "protein": "0 g",
+                "salt": "0.01 g"
+            },
+            "ingredients": "Voda, zaslađivači, aroma, kofein",
+            "allergens": "Bez alergena.",
+            "country_of_origin": "Srbija"
+        },
+        "image_path": "pepsi/1.webp"
+    },
+    {
+        "name": "Monster Energy Drink Zero Sugar Ultra 500ml",
+        "slug": "monster-energy-drink-zero-sugar-ultra-500ml",
+        "sku": "MED-10001",
+        "price": 250,
+        "discounted_price": 220,
+        "stock": 180,
+        "description": "Zero šećera, ultra osvežavajući energetski napitak sa laganim ukusom citrusa.",
+        "product_information": {
+            "nutritional_values": {
+                "energy": "10 kcal",
+                "fat": "0 g",
+                "saturates": "0 g",
+                "carbohydrate": "2 g",
+                "sugars": "0 g",
+                "fibre": "0 g",
+                "protein": "0 g",
+                "salt": "0 g"
+            },
+            "ingredients": "Voda, zaslađivači, kofein, citrusi, taurin, vitamini",
+            "allergens": "Bez alergena.",
+            "country_of_origin": "SAD"
+        },
+        "image_path": "monster/2.webp"
+    },
+    {
+        "name": "Monster Bad Apple Energy Drink 500ml",
+        "slug": "monster-bad-apple-energy-drink-500ml",
+        "sku": "MBA-10002",
+        "price": 250,
+        "discounted_price": 230,
+        "stock": 210,
+        "description": "Osvežavajući Monster Bad Apple sa jabukama i energijom.",
+        "product_information": {
+            "nutritional_values": {
+                "energy": "210 kcal",
+                "fat": "0 g",
+                "saturates": "0 g",
+                "carbohydrate": "52 g",
+                "sugars": "52 g",
+                "fibre": "0 g",
+                "protein": "0 g",
+                "salt": "0 g"
+            },
+            "ingredients": "Voda, šećer, kofein, taurin, aroma jabuke, vitamini",
+            "allergens": "Bez alergena.",
+            "country_of_origin": "SAD"
+        },
+        "image_path": "monster/3.webp"
+    },
+    {
+        "name": "Relentless Origin Energy Drink",
+        "slug": "relentless-origin-energy-drink",
+        "sku": "RO-10003",
+        "price": 240,
+        "discounted_price": 220,
+        "stock": 250,
+        "description": "Relentless Origin je snažan energetski napitak sa voćnim ukusima.",
+        "product_information": {
+            "nutritional_values": {
+                "energy": "230 kcal",
+                "fat": "0 g",
+                "saturates": "0 g",
+                "carbohydrate": "55 g",
+                "sugars": "55 g",
+                "fibre": "0 g",
+                "protein": "0 g",
+                "salt": "0 g"
+            },
+            "ingredients": "Voda, šećer, kofein, taurin, vitamini, aroma",
+            "allergens": "Bez alergena.",
+            "country_of_origin": "SAD"
+        },
+        "image_path": "relentless/2.webp"
+    },
+    {
+        "name": "Reese's Peanut Butter Bar",
+        "slug": "reeses-peanut-butter-bar",
+        "sku": "RPB-10004",
+        "price": 350,
+        "discounted_price": 330,
+        "stock": 150,
+        "description": "Reese's čokoladna pločica sa kremom od kikirikija.",
+        "product_information": {
+            "nutritional_values": {
+                "energy": "500 kcal",
+                "fat": "30 g",
+                "saturates": "15 g",
+                "carbohydrate": "55 g",
+                "sugars": "45 g",
+                "fibre": "3 g",
+                "protein": "6 g",
+                "salt": "0.1 g"
+            },
+            "ingredients": "Čokolada, kikiriki, mleko, šećer",
+            "allergens": "Sadrži kikiriki, mleko.",
+            "country_of_origin": "SAD"
+        },
+        "image_path": "reese/1.webp"
+    },
+    {
+        "name": "Skittles Fruits Pouch 136g",
+        "slug": "skittles-fruits-pouch-136g",
+        "sku": "SF-10006",
+        "price": 280,
+        "discounted_price": 260,
+        "stock": 210,
+        "description": "Skittles voćne bombone u pakovanju od 136g sa raznolikim ukusima.",
+        "product_information": {
+            "nutritional_values": {
+                "energy": "400 kcal",
+                "fat": "10 g",
+                "saturates": "3 g",
+                "carbohydrate": "80 g",
+                "sugars": "70 g",
+                "fibre": "1 g",
+                "protein": "1 g",
+                "salt": "0 g"
+            },
+            "ingredients": "Šećer, voćni koncentrat, želatin",
+            "allergens": "Sadrži želatin.",
+            "country_of_origin": "SAD"
+        },
+        "image_path": "skittles/1.webp"
+    }
+]

@@ -9,7 +9,7 @@ final class ProductController
 {
     public function index()
     {
-        $products = Product::with('reviews')->paginate(10);
+        $products = Product::orderBy('id', 'asc')->paginate(10);
 
         return ProductResource::collection($products);
     }
@@ -18,7 +18,7 @@ final class ProductController
     {
         $product = Product::where('slug', $slug)->firstOrFail();
 
-        return new ProductResource($product->load('reviews'));
+        return new ProductResource($product);
     }
 
     // Create a new product

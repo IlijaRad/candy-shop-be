@@ -34,7 +34,25 @@ final class ReviewController
 
         $reviews = $product->reviews()->paginate(10);
 
-        return ReviewResource::collection($reviews);
+        $averageRating = $product->reviews()->avg('rating');
+        $averageRating = round($averageRating);
+
+        return response()->json([
+            'reviews' => ReviewResource::collection($reviews),
+            'average_rating' => $averageRating,
+            'meta' => [
+                'current_page' => $reviews->currentPage(),
+                'per_page' => $reviews->perPage(),
+                'total' => $reviews->total(),
+                'last_page' => $reviews->lastPage(),
+            ],
+            'links' => [
+                'first' => $reviews->url(1),
+                'last' => $reviews->url($reviews->lastPage()),
+                'prev' => $reviews->previousPageUrl(),
+                'next' => $reviews->nextPageUrl(),
+            ]
+        ]);
     }
 
     public function show($slug, Review $review)
