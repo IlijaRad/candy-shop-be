@@ -2,8 +2,10 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 class Product extends Model
 {
@@ -46,6 +48,15 @@ class Product extends Model
     protected $casts = [
         'product_information' => 'array',
     ];
+
+    public function defaultImageUrl(): Attribute
+    {
+        return Attribute::get(
+            fn(): string => $this->default_image_path
+                ? Storage::url($this->default_image_path)
+                : asset('product-placeholder.png')
+        );
+    }
 
     public function reviews()
     {

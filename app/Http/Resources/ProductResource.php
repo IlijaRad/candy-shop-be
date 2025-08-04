@@ -32,7 +32,6 @@ class ProductResource extends JsonResource
                 'allergens' => $this->product_information['allergens'],
                 'country_of_origin' => $this->product_information['country_of_origin'],
             ],
-            'reviews' => ReviewResource::collection($this->reviews),
         ];
     }
 }
