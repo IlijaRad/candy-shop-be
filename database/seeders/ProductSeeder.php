@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 use App\Models\Product;
+use App\Models\Review;
+use Database\Factories\ReviewFactory;
 use Illuminate\Database\Seeder;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Arr;
@@ -25,10 +27,12 @@ class ProductSeeder extends Seeder
 
             $path = $file->storePublicly('products');
 
-            Product::query()->create([
+            $product = Product::query()->create([
                 ...Arr::except($data, ['image_path']),
                 Product::DEFAULT_IMAGE_PATH => $path,
             ]);
+
+            Review::factory()->for($product)->count(10)->create();
         });
     }
 }
