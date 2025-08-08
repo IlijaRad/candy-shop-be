@@ -32,7 +32,7 @@ final class ReviewController
     {
         $product = Product::where('slug', $slug)->firstOrFail();
 
-        $reviews = $product->reviews()->paginate(10);
+        $reviews = $product->reviews()->paginate(3);
 
         $averageRating = $product->reviews()->avg('rating');
         $averageRating = round($averageRating);
