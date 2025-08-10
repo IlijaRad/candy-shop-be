@@ -9,6 +9,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 
 class ProductSeeder extends Seeder
 {
@@ -20,12 +21,18 @@ class ProductSeeder extends Seeder
         $products = File::json(database_path('static/data/products.json'));
 
         collect($products)->each(function (array $data) {
+            $filePath = database_path("static/assets/products/{$data['image_path']}");
+
             $file = new UploadedFile(
-                database_path("static/assets/products/{$data['image_path']}"),
+                $filePath,
                 $data['image_path'],
+                mime_content_type($filePath),
+                null,
+                true
             );
 
-            $path = $file->storePublicly('products');
+            Storage::disk('s3')->put('products/' . $data['image_path'], file_get_contents($file));
+            $path = Storage::disk('s3')->url('products/' . $data['image_path']);
 
             $product = Product::query()->create([
                 ...Arr::except($data, ['image_path']),
