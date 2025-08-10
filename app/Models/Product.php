@@ -53,7 +53,7 @@ class Product extends Model
     {
         return Attribute::get(
             fn(): string => $this->default_image_path
-                ? Storage::url($this->default_image_path)
+                ? $this->default_image_path
                 : asset('product-placeholder.png')
         );
     }
